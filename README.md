@@ -8,7 +8,7 @@ Features
 	•	Communicates with a mock backend server hosted on Glitch using fetch().
 	•	Implements asynchronous logic:
 	•	The backend updates queue status every 12 seconds.
-	•	The frontend fetches the queue status every 2 seconds to simulate real-world delay and race conditions.
+	•	The frontend fetches the queue status every 10 seconds to simulate real-world delay and race conditions.
 	•	Uses useEffect for managing intervals and conditional UI updates.
 	•	Provides a form-based interaction and responsive feedback to simulate real ticket booking pressure.
 
