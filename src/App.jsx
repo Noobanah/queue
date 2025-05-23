@@ -37,6 +37,11 @@ function App() {
 
       {started ? (
         <>
+          {target === null && (
+            <p>
+              It may take a moment to load. Please wait or try submitting again.
+            </p>
+          )}
           <YourQueue target={target} />
           <ProgressBar started={started} />
           <QueueList>
