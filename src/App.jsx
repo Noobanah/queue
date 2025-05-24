@@ -36,7 +36,7 @@ function App() {
       {target === null &&
         (!started ? (
           <>
-            <h4>Fill in this form to join the queue.</h4>
+            <p>Fill in this form to join the queue.</p>
             <p>We’re using a server from Glitch,</p>
             <p>which may go to sleep if there are no requests for a while.</p>
             <p>If the page doesn’t load after you request a ticket,</p>
