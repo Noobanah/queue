@@ -34,7 +34,7 @@ function App() {
       <Header target={target} username={username} />
       {reached && <h3 style={{ color: "white" }}>🎉 ถึงคิวของคุณแล้ว!</h3>}
       {target === null &&
-        (started ? (
+        (!started ? (
           <>
             <p>Fill in this form to join the queue.</p>
             <p>
