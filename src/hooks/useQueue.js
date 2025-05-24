@@ -40,6 +40,7 @@ function useHook() {
       await fetch(`${API_URL}/api/queue/reached`, {
         method: "POST",
       });
+      setStarted(false);
     } catch (error) {
       console.error("Error notifying reached:", error);
     }
@@ -59,7 +60,6 @@ function useHook() {
           if (dataQueue.reached) {
             await notifyReached();
             clearInterval(interval);
-            setStarted(false);
           }
         } catch (error) {
           console.error("Error fetching queue:", error);
