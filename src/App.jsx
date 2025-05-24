@@ -35,7 +35,14 @@ function App() {
       {reached && <h3 style={{ color: "white" }}>🎉 ถึงคิวของคุณแล้ว!</h3>}
       {target === null &&
         (started ? (
-          <p>Fill in this form to join the queue.</p>
+          <>
+            <p>Fill in this form to join the queue.</p>
+            <p>
+              We’re using a server from Glitch, which may go to sleep if there
+              are no requests for a while. If the page doesn’t load after you
+              request a ticket, please try again.
+            </p>
+          </>
         ) : (
           <p>
             It may take a moment to load. Please wait or try submitting again.
