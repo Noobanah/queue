@@ -33,6 +33,15 @@ function App() {
     <div className="App">
       <Header target={target} username={username} />
       {reached && <h3 style={{ color: "white" }}>🎉 ถึงคิวของคุณแล้ว!</h3>}
+      {username && target === null && (
+        <>
+          <p>Fill in this form to join the queue.</p>
+          <p>We’re using a server from Glitch,</p>
+          <p>which may go to sleep if there are no requests for a while.</p>
+          <p>If the page doesn’t load after you request a ticket,</p>
+          <p>please try again.</p>
+        </>
+      )}
       {target === null &&
         (!started ? (
           <>
