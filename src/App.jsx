@@ -42,7 +42,7 @@ function App() {
           <p>please try again.</p>
         </>
       )}
-      {target === null &&
+      {/* {target === null &&
         (!started ? (
           <>
             <p>Fill in this form to join the queue.</p>
@@ -55,7 +55,7 @@ function App() {
           <p>
             It may take a moment to load. Please wait or try submitting again.
           </p>
-        ))}
+        ))} */}
       {started ? (
         <>
           <YourQueue target={target} />
