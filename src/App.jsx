@@ -36,12 +36,11 @@ function App() {
       {target === null &&
         (!started ? (
           <>
-            <p>Fill in this form to join the queue.</p>
-            <p>
-              We’re using a server from Glitch, which may go to sleep if there
-              are no requests for a while. If the page doesn’t load after you
-              request a ticket, please try again.
-            </p>
+            <h4>Fill in this form to join the queue.</h4>
+            <p>We’re using a server from Glitch,</p>
+            <p>which may go to sleep if there are no requests for a while.</p>
+            <p>If the page doesn’t load after you request a ticket,</p>
+            <p>please try again.</p>
           </>
         ) : (
           <p>
