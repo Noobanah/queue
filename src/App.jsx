@@ -33,13 +33,14 @@ function App() {
     <div className="App">
       <Header target={target} username={username} />
       {reached && <h3 style={{ color: "white" }}>🎉 ถึงคิวของคุณแล้ว!</h3>}
-      {target === null && <p>Fill in this form to join the queue.</p>}
-      {started && target === null && (
-        <p>
-          It may take a moment to load. Please wait or try submitting again.
-        </p>
-      )}
-
+      {target === null &&
+        (started ? (
+          <p>Fill in this form to join the queue.</p>
+        ) : (
+          <p>
+            It may take a moment to load. Please wait or try submitting again.
+          </p>
+        ))}
       {started ? (
         <>
           <YourQueue target={target} />
