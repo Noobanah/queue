@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.dce8d884.css",
+    "main.js": "/static/js/main.d5921170.js",
+    "static/js/453.e1ec7735.chunk.js": "/static/js/453.e1ec7735.chunk.js",
+    "static/media/concertbg.jpg": "/static/media/concertbg.657f3444aae32bc680a8.jpg",
+    "index.html": "/index.html",
+    "main.dce8d884.css.map": "/static/css/main.dce8d884.css.map",
+    "main.d5921170.js.map": "/static/js/main.d5921170.js.map",
+    "453.e1ec7735.chunk.js.map": "/static/js/453.e1ec7735.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dce8d884.css",
+    "static/js/main.d5921170.js"
+  ]
+}
